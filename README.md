@@ -1,5 +1,6 @@
 # quintessence
 A project for testing and getting familiar with JavaScript, Windows PowerShell, Python, Flask, and Firebase API
+"app.zip" file contains all the files I have worked on so far
 
 # instructions
 1. Install Flask (Python's microframework) (check out this link for an easy to install Flask https://www.youtube.com/watch?v=zPMr0lEMqpo)
