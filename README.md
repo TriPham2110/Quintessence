@@ -16,4 +16,15 @@ A project for testing and getting familiar with JavaScript, Windows PowerShell, 
 # to-do things
  Expand the applications of this project such as including music, photo gallery, etc.
  
+# demonstration
+
+![testFirebase](https://user-images.githubusercontent.com/44308446/59739415-69a1bd80-922a-11e9-8927-c86a5fb77d14.png)
+Fig1. Firebase realtime database
+
+![testFirebase1](https://user-images.githubusercontent.com/44308446/59739427-6f979e80-922a-11e9-80ff-85811d2409c9.png)
+Fig2. Login page using the credentials from the database
+
+![testFirebase2](https://user-images.githubusercontent.com/44308446/59739431-72928f00-922a-11e9-9a0a-365a6d950605.png)
+Fig3. Profile page after the successful login
+ 
 
