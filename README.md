@@ -2,7 +2,7 @@
 A project for testing and getting familiar with JavaScript, Windows PowerShell, Python, Flask, and Firebase API
 
 # instructions
-1. Install Flask (Python's microframework) using this link: flask.pocoo.org
+1. Install Flask (Python's microframework) (check out this link for an easy to install Flask https://www.youtube.com/watch?v=zPMr0lEMqpo)
 2. Install Python 3 (3.6.5 recommended)
 3. Download the files from this repository
 4. Open Windows PowerShell
