@@ -6,10 +6,11 @@ A project for testing and getting familiar with JavaScript, Windows PowerShell, 
 2. Install Python 3 (3.6.5 recommended)
 3. Download the files from this repository
 4. Open Windows PowerShell
-5. Navigate and change directory to where the file "server.py" is
-6. Type in command "py server.py" to run the program
-7. Once the program runs, open a browser and enter "localhost:8000"
-8. The link will lead the user to the main page to interact with other webpages using a local server
+5. Use command "pip install firebase-admin" for firebase api use
+6. Navigate and change directory to where the file "server.py" is
+7. Type in command "py server.py" to run the program
+8. Once the program runs, open a browser and enter "localhost:8000"
+9. The link will lead the user to the main page to interact with other webpages using a local server
 
 # to-do things
 1. Expand the applications of this project such as including music, photo gallery, etc.
