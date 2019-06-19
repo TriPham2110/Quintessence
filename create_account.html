@@ -7,10 +7,10 @@
 		<script type="text/javascript" src="../static/jquery.js"></script>
 	</head>
 	<body>
+		<form class="box" action="/api/create" onsubmit="return checkpassword()" method="post">
 		<script type="text/javascript">
 			rndBackground();
 		</script>
-		<form class="box" class="create_account-bg" action="/api/create" onsubmit="return checkpassword()" method="post">
 		<h2>Create New Account</h2>
 			<p>New Username</p>
 			<input id="username" type="text" name="username" placeholder="Enter new username">			
