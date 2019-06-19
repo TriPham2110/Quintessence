@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title> {{ user }} </title>
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
+		<script type="text/javascript" src="../static/jquery.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			rndBackground();
+		</script>
+		<div class="box" class="profile-bg">
+			<p>Welcome {{ user }},</p>
+			<button id="logout" type="submit" name="logout" onclick="location.href='/api/dropsession';">Log out</button>
+		</div>
+	</body>
+</html>

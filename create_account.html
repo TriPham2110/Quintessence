@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Create Account Page</title>
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
+		<script type="text/javascript" src="../static/jquery.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			rndBackground();
+		</script>
+		<form class="box" class="create_account-bg" action="/api/create" onsubmit="return checkpassword()" method="post">
+		<h2>Create New Account</h2>
+			<p>New Username</p>
+			<input id="username" type="text" name="username" placeholder="Enter new username">			
+			<p>New Password</p>
+			<input id="password" type="text" name="password" placeholder="Enter new password">
+			<p>Confirm Password</p>
+			<input id="confirmPassword" type="text" name="confirmPassword" placeholder="Re-enter password">
+			<button type="submit" id="submit">Submit</button>
+		</form>
+		
+		<script>
+			function checkpassword() {
+				password = document.getElementById("password").value;
+				confirmPassword = document.getElementById("confirmPassword").value;
+				console.log(password);
+				console.log(confirmPassword);
+				if (password == confirmPassword) return true;
+				else return false;
+			}
+		</script>
+	</body>
+</html>
