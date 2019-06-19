@@ -14,5 +14,6 @@ A project for testing and getting familiar with JavaScript, Windows PowerShell, 
 9. The link will lead the user to the main page to interact with other webpages using a local server
 
 # to-do things
-1. Expand the applications of this project such as including music, photo gallery, etc.
-2. Figuring out how to demonstrate the realtime database on firebase for user's device
+ Expand the applications of this project such as including music, photo gallery, etc.
+ 
+
