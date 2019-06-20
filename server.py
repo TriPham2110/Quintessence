@@ -65,6 +65,10 @@ def profile():
     else:
         return redirect(url_for('login'))
 
+@app.route('/gallery', methods=['GET'])
+def gallery():
+    return render_template('gallery.html')
+
 
 @app.route('/api/dropsession', methods=['GET'])
 def dropsession():
