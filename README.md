@@ -15,7 +15,7 @@ A project for testing and getting familiar with JavaScript, Windows PowerShell, 
 
 # to-do things
  Expand the applications of this project such as including music, photo gallery, etc.
- Make body background change randomly when connected to localhost (currently working for each separate page)
+ Photo gallery needs tranferred to firebase for realtime database purposes
  
 # demonstration
 
