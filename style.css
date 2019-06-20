@@ -11,6 +11,7 @@ body{
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
+	overflow: auto;
 }
 .box{
 	width: 400px;
@@ -71,5 +72,26 @@ body{
 }
 .box input[type="submit"],button[type="submit"],input[type="button"]:hover{
 	background: #2ecc71;
+}
+h1{
+	text-align: center;
+	color: #3498db;
+	margin:30px 0 50px;
+}
+.gallery{
+	margin 10px 50px;
+}
+.gallery img{
+	width: 270px;
+	height: 200px;
+	padding: 16px;
+	align: justify;
+	display: inline-block;
+	filter: grayscale(70%);
+	transition: 1s;
+}
+.gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
 }
 	
