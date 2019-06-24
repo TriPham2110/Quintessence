@@ -26,6 +26,7 @@ def checkCredentials(username, password):
     else:
         return False
 
+
 def userExists(username):
     if users_ref.child(username).get() != None:
         return True

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, g, session, redirect, url_for
+from flask import Flask, render_template, request, jsonify, g, session, redirect, url_for, flash
 import os.path
 import json
 import hashlib
@@ -38,8 +38,8 @@ def loginApi():
         session['user'] = request.form['username']
         return redirect(url_for('profile'))
     else:
-        return "False"
-
+        flash("Invalid credentials. Try again!")
+        return render_template('login.html')
 
 @app.route('/create', methods=['GET'])
 def create():
@@ -55,7 +55,8 @@ def createApi():
         addUser(request.form['username'],hashed_password)
         return redirect(url_for('login'))
     else:
-        return "False"
+        flash("User already exists. Try again!")
+        return render_template('create_account.html')
 
 
 @app.route('/profile', methods=['GET'])
