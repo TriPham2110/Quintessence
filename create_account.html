@@ -8,14 +8,22 @@
 	</head>
 	<body>
 		<form class="box" action="/api/create" onsubmit="return checkpassword()" method="post">
-		<h2>Create New Account</h2>
+			<h2>Create New Account</h2>
 			<p>New Username</p>
-			<input id="username" type="text" name="username" placeholder="Enter new username">			
+			<input id="username" type="text" name="username" placeholder="Enter new username">						
 			<p>New Password</p>
 			<input id="password" type="text" name="password" placeholder="Enter new password">
 			<p>Confirm Password</p>
 			<input id="confirmPassword" type="text" name="confirmPassword" placeholder="Re-enter password">
 			<button type="submit" id="submit">Submit</button>
+			
+			{% with messages = get_flashed_messages()%}
+				{%if messages%}
+					{%for message in messages%}
+						<p>{{message}}</p>
+					{%endfor%}
+				{%endif%}
+			{%endwith%}
 		</form>
 		
 		<script type="text/javascript">
