@@ -29,4 +29,4 @@ Fig2. Login page using the credentials from the database
 Fig3. Profile page after the successful login (still in development for file upload)
 
 ![testFirebase5](https://user-images.githubusercontent.com/44308446/60640595-7fe47780-9ded-11e9-9bd1-e02e13c1d452.png)
-Fig4. User's gallery (still need realtime interaction with the database
+Fig4. User's gallery (still need realtime interaction with the database)
