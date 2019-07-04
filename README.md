@@ -22,10 +22,11 @@ A project for testing and getting familiar with JavaScript, Windows PowerShell, 
 ![testFirebase](https://user-images.githubusercontent.com/44308446/59739415-69a1bd80-922a-11e9-8927-c86a5fb77d14.png)
 Fig1. Firebase realtime database
 
-![testFirebase1](https://user-images.githubusercontent.com/44308446/59739427-6f979e80-922a-11e9-80ff-85811d2409c9.png)
+![testFirebase3](https://user-images.githubusercontent.com/44308446/60640592-78bd6980-9ded-11e9-9d77-6b47fdd1453c.png)
 Fig2. Login page using the credentials from the database
 
-![testFirebase2](https://user-images.githubusercontent.com/44308446/59739431-72928f00-922a-11e9-9a0a-365a6d950605.png)
-Fig3. Profile page after the successful login
- 
+![testFirebase4](https://user-images.githubusercontent.com/44308446/60640594-7fe47780-9ded-11e9-8d74-dd514249d056.png)
+Fig3. Profile page after the successful login (still in development for file upload)
 
+![testFirebase5](https://user-images.githubusercontent.com/44308446/60640595-7fe47780-9ded-11e9-9bd1-e02e13c1d452.png)
+Fig4. User's gallery (still need realtime interaction with the database
