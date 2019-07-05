@@ -19,10 +19,11 @@ A personal gallery project for testing and getting familiar with HTML, CSS, Java
 # to-do things
  Expand the applications of this project such as including music, calendar, etc.
  Photo gallery needs tranferred to Firebase for realtime database purposes
+ Update the look of some features
  
 # demonstration
 
-![testFirebase](https://user-images.githubusercontent.com/44308446/59739415-69a1bd80-922a-11e9-8927-c86a5fb77d14.png)
+![testFirebase](https://user-images.githubusercontent.com/44308446/60702239-f3f14f00-9ec3-11e9-8ef0-509594296d86.png)
 Fig1. Firebase realtime database
 
 ![testFirebase3](https://user-images.githubusercontent.com/44308446/60640592-78bd6980-9ded-11e9-9d77-6b47fdd1453c.png)
