@@ -5,16 +5,20 @@ A personal gallery project for testing and getting familiar with HTML, CSS, Java
 1. Install Flask (Python's microframework) (check out this link for an easy to install Flask https://www.youtube.com/watch?v=zPMr0lEMqpo)
 2. Install Python 3 (3.6.5 recommended)
 3. Download the files from this repository
-4. Open Windows PowerShell
-5. Use command "pip install firebase-admin" for firebase api use
-6. Navigate and change directory to where the file "server.py" is
-7. Type in command "py server.py" to run the program
-8. Once the program runs, open a browser and enter "localhost:8000"
-9. The link will lead the user to the main page to interact with other webpages using a local server
+4. Register on Firebase to create a new project and retrieve the service account key (or json file)
+5. Copy and paste the json file inside the folder "app_need_serviceAccountKey"
+6. Open userMethods.py and update the service account key and databaseURL
+7. Open Windows PowerShell
+8. Navigate and change directory to where the file "server.py" is
+9. Use command "pip install firebase-admin" for Firebase API purpose
+10. Type in command "py server.py" to run the program
+11. Once the program runs, open a browser and enter "localhost:8000"
+13. The link will lead the user to the main page to interact with other webpages using a local server
+14. The user can also go to the Realtime Database in the Firebase console to see the changes made for authentication feature
 
 # to-do things
- Expand the applications of this project such as including music, photo gallery, etc.
- Photo gallery needs tranferred to firebase for realtime database purposes
+ Expand the applications of this project such as including music, calendar, etc.
+ Photo gallery needs tranferred to Firebase for realtime database purposes
  
 # demonstration
 
