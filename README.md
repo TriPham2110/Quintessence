@@ -32,5 +32,5 @@ Fig2. Login page using the credentials from the database
 ![testFirebase4](https://user-images.githubusercontent.com/44308446/60640594-7fe47780-9ded-11e9-8d74-dd514249d056.png)
 Fig3. Profile page after the successful login
 
-![testFirebase5](https://user-images.githubusercontent.com/44308446/60640595-7fe47780-9ded-11e9-9bd1-e02e13c1d452.png)
+![testFirebase5](https://user-images.githubusercontent.com/44308446/60702402-8e519280-9ec4-11e9-80e9-67a1bb76404f.png)
 Fig4. User's gallery (still need realtime interaction with the database)
