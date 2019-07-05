@@ -17,9 +17,9 @@ A personal gallery project for testing and getting familiar with HTML, CSS, Java
 14. The user can also go to the Realtime Database in the Firebase console to see the changes made for authentication feature
 
 # to-do things
- Expand the applications of this project such as including music, calendar, etc.
- Photo gallery needs tranferred to Firebase for realtime database purposes
- Update the look of some features
+Expand the applications of this project such as including music, calendar, etc.
+Photo gallery needs tranferred to Firebase for realtime database purposes
+Update the look of some features
  
 # demonstration
 
