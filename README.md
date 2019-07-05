@@ -17,12 +17,11 @@ A personal gallery project for testing and getting familiar with HTML, CSS, Java
 14. The user can also go to the Realtime Database in the Firebase console to see the changes made for authentication feature
 
 # to-do things
-Expand the applications of this project such as including music, calendar, etc.
-Photo gallery needs tranferred to Firebase for realtime database purposes
+Expand the applications of this project such as including music, calendar, etc. <br/>
+Photo gallery needs tranferred to Firebase for realtime database purposes <br/>
 Update the look of some features
- 
-# demonstration
 
+# demo
 ![testFirebase](https://user-images.githubusercontent.com/44308446/60702239-f3f14f00-9ec3-11e9-8ef0-509594296d86.png)
 Fig1. Firebase realtime database
 
