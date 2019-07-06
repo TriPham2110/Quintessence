@@ -56,7 +56,7 @@ def createApi():
         addUser(request.form['username'],hashed_password)
         return redirect(url_for('login'))
     else:
-        flash("User already exists. Try again!")
+        flash("User exists or Incorrect match. Try again!")
         return render_template('create_account.html')
 
 
@@ -76,15 +76,25 @@ def upload():
             os.mkdir(target)
     else:
         print("Couldn't create upload directory: {}".format(target))
+
     print(request.files.getlist("file"))
-    for upload in request.files.getlist("file"):
-        print(upload)
-        print("{} is the file name".format(upload.filename))
-        filename = upload.filename
-        destination = "/".join([target, filename])
-        print ("Accept incoming file:", filename)
-        print ("Save it to:", destination)
-        upload.save(destination)
+    if request.files['file'].filename=='':
+        flash("No file uploaded. Try again!")
+        return redirect(url_for('profile'))
+
+    else:
+        for upload in request.files.getlist("file"):
+            print(upload)
+            print("{} is the file name".format(upload.filename))
+            filename = upload.filename
+            destination = "/".join([target, filename])
+            print ("Accept incoming file:", filename)
+            print ("Save it to:", destination)
+            if os.path.exists(destination):
+                flash("File already exists. Try again!")
+                return redirect(url_for('profile'))
+            else:
+                upload.save(destination)
 
     #return send_from_directory("images", filename, as_attachment=True)
     return render_template('complete.html', image_name=filename)
@@ -92,6 +102,11 @@ def upload():
 @app.route('/static/images/<filename>')
 def send_image(filename):
     return send_from_directory('./static/images', filename)
+
+#@app.route('/api/complete', methods=['POST'])
+#def complete():
+#    session.pop('user', None)
+#    return redirect(url_for('login'))
 
 @app.route('/gallery')
 def gallery():

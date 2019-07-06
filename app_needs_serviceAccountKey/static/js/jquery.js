@@ -1,7 +1,7 @@
 var total = 4;
 function rndBackground(){
 	var num = Math.floor(Math.random() * total);
-	document.body.background = '../static/background'+ num +'.jpg';
+	document.body.background = '../static/background_images/background'+ num +'.jpg';
 	document.body.style.backgroundRepeat = "repeat";
 }
 
