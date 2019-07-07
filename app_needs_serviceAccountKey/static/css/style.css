@@ -16,7 +16,7 @@ body{
 
 .box{
 	width: 400px;
-	padding: 40px;
+	padding: 50px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -108,4 +108,36 @@ h1{
 .gallery img:hover{
 	filter: grayscale(0);
 	transform: scale(1.1);
+}
+
+form.upload-form input[type="file"] {
+    position:absolute;
+}
+
+::-webkit-file-upload-button {
+  background: #2ecc71;
+  color: white;
+  padding: 0.5em;
+}
+
+/***** Example custom styling *****/
+.upload-form {
+    border: 2px solid #AAA;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 2px;
+    background: #DDD;
+    display: inline-block;
+}
+.upload-form:hover {
+    background: #CCC;
+}
+.upload-form:active {
+    background: #CCF;
+}
+.upload-form :invalid + span {
+    color: #A44;
+}
+.upload-form :valid + span {
+    color: #4A4;
 }

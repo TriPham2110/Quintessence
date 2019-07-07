@@ -8,49 +8,30 @@
 		<script type="text/javascript" src="../static/js/jquery.js"></script>
 	</head>
 	<body>
-		<div class="box">
+		<form class="box" action="{{ url_for('profile') }}" method="post" enctype="multipart/form-data">
 			<p>Welcome {{ user }},</p>
 			<input type="button" onclick="location.href='/gallery';" value="Gallery collection"/>
 			
-			<form id="upload-form" action="{{ url_for('profile') }}" method="post" enctype="multipart/form-data">
-				<input id="file" type="file" name="file" accept="image/*" multiple>
-				<div id="msg"></div>
+			<input class="upload-form" id="file" type="file" name="file" onchange="uploadMsg()" accept="image/*" multiple>
+			
+			<p id="msg"></p>
 				
 				{% with messages = get_flashed_messages()%}
 					{%if messages%}
 						{%for message in messages%}
-							<div>{{message}}</div>
+							<p>{{message}}</p>
 						{%endfor%}
 					{%endif%}
 				{%endwith%}
 				
-				<input type="submit" value="Upload" id="upload-button">
-			</form>
+			<input type="submit" value="Upload" id="upload-button">
 			
-			<button id="logout" type="submit" name="logout" onclick="location.href='/api/dropsession';">Log out</button>
-		</div>
+			<input id="logout" type="button" value="Log out" onclick="location.href='/api/dropsession';">
+		</form>
 		
 		<script type="text/javascript">
 			rndBackground();
-			$("#file").change(function(){
-
-				var input = document.getElementById('file');
-
-				for (var i=0; i<input.files.length; i++)
-				{
-					var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
-
-					if ((ext == 'jpg') || (ext == 'png'))
-					{
-						$("#msg").text("Files are supported")
-					}
-					else
-					{
-						$("#msg").text("Files are NOT supported")
-						document.getElementById("file").value ="";
-					}
-				}
-			} );
+			uploadMsg();
 		</script>
 	</body>
 </html>
