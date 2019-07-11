@@ -2,12 +2,10 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-#Fetch the service account key JSON file contents
-cred = credentials.Certificate("path/to/serviceAccountKey.json")
-
-#Initialize the app with a service account
+cred = credentials.Certificate("service_account_key.json")
 default_app = firebase_admin.initialize_app(cred, {
-    'databaseURL' : "https://databaseName.firebaseio.com"
+    'databaseURL' : "path_to_project.firebaseio.com",
+    'storageBucket': 'path_to_project.appspot.com'
 })
 
 root = db.reference()

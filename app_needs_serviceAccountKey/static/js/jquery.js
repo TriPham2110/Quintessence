@@ -37,3 +37,42 @@ function uploadMsg(){
 	}
 }
 
+function uploadFirebase() {
+	// Initialize Firebase
+	var config = {
+		"apiKey": "",
+		"authDomain": ".firebaseapp.com",
+		"databaseURL": ".firebaseio.com",
+		"projectId": "",
+		"storageBucket": ".appspot.com",
+		"messagingSenderId": ""
+	};
+	firebase.initializeApp(config);
+	//-------------------------------------
+
+	var uploader = document.getElementById('upload-button');
+	var fileButton = document.getElementById('file');
+	fileButton.addEventListener('change', function(e){
+	var file = e.target.files[0];
+	var storageRef = firebase.storage().ref('gallery/'+file.name);
+	var task = storageRef.put(file);
+	task.on('state_changed', function progress(snapshot) {
+		var percentage = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+		uploader.value = percentage;
+
+	  }, function error(err) {
+
+
+	  },function complete() {
+			var postKey = firebase.database().ref('images/').push().key;
+			var downloadURL = task.snapshot.downloadURL;
+			var updates = {};
+			var postData = {
+				url: downloadURL,
+				name: file.name
+			}
+			updates['/images/'+postKey]=postData;
+			firebase.database().ref().update(updates);
+	  });
+	});  
+}

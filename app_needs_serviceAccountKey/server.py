@@ -10,7 +10,6 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-
 @app.route('/', methods=['GET', 'POST'])
 def main():
     if request.method == 'GET':
@@ -102,11 +101,6 @@ def upload():
 @app.route('/static/images/<filename>')
 def send_image(filename):
     return send_from_directory('./static/images', filename)
-
-#@app.route('/api/complete', methods=['POST'])
-#def complete():
-#    session.pop('user', None)
-#    return redirect(url_for('login'))
 
 @app.route('/gallery')
 def gallery():
